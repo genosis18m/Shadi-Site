@@ -91,7 +91,7 @@ export function HeroScrollDemo() {
             
             {/* Responsive Photo Gallery */}
             <div className="w-full p-4">
-              <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 w-full px-2">
+              <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-1 sm:gap-3 w-full px-1 sm:px-2">
                 {heroPhotos.map((src, idx) => (
                   <motion.div
                     key={src}
