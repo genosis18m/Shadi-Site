@@ -343,9 +343,9 @@ function App() {
           src="/Photos/ganeshji.png"
           alt="Ganesh Ji"
           style={{
-            width: 300,
-            height: 300,
-            opacity: 0.7,
+            width: 150,
+            height: 150,
+            opacity: 0.5,
             pointerEvents: "none",
             userSelect: "none",
           }}
@@ -358,9 +358,9 @@ function App() {
           src="/Photos/ganeshji.png"
           alt="Ganesh Ji"
           style={{
-            width: 300,
-            height: 300,
-            opacity: 0.7,
+            width: 150,
+            height: 150,
+            opacity: 0.5,
             pointerEvents: "none",
             userSelect: "none",
             transform: "scaleX(-1)",
