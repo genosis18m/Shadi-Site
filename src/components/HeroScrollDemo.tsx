@@ -4,21 +4,21 @@ import { Heart, Sparkles, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 
 const heroPhotos = [
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.41_2e0c466f.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.42_89e8b3e5.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.43_2b38e96a.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.41_2e0c466f.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.42_89e8b3e5.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.43_2b38e96a.jpg",
   "/Photos/WhatsApp Image 2025-06-20 at 21.25.34_c899b820.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.44_e8e7dd6e.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.45_67f680a0.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.45_d9019950.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.46_1b6583ff.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.36_f81ef63b.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.37_8ed72600.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.38_34e3864b.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.38_f7dafee8.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.39_2aa71b9a.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.40_1230a481.jpg",
-  "/photos/WhatsApp Image 2025-06-20 at 21.15.40_c99b6cc8.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.44_e8e7dd6e.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.45_67f680a0.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.45_d9019950.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.46_1b6583ff.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.36_f81ef63b.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.37_8ed72600.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.38_34e3864b.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.38_f7dafee8.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.39_2aa71b9a.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.40_1230a481.jpg",
+  "/Photos/WhatsApp Image 2025-06-20 at 21.15.40_c99b6cc8.jpg",
 ];
 
 export function HeroScrollDemo() {
