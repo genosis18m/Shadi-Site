@@ -332,49 +332,47 @@ const PhotoPlaceholder = ({ title, subtitle }: { title: string; subtitle?: strin
   );
 };
 
+
 function App() {
   return (
     <div className="min-h-screen relative overflow-hidden">
 
-<div className="absolute top-40 left-7 z-40 flex items-center">
-  <img
-    src="/Photos/ganeshji.png"
-    alt="Ganesh Ji"
-    style={{
-      width: 300,
-      height: 300,
-      opacity: 0.7,
-      pointerEvents: "none",
-      userSelect: "none",
-    }}
-    className="block"
-  />
-</div>
-<div className="absolute top-40 right-7 z-40 flex items-center">
-  <img
-    src="/Photos/ganeshji.png"
-    alt="Ganesh Ji"
-    style={{
-      width: 300,
-      height: 300,
-      opacity: 0.7,
-      pointerEvents: "none",
-      userSelect: "none",
-      transform: "scaleX(-1)", // Mirror image for symmetry
-    }}
-    className="block"
-  />
-</div>
+      {/* Ganesh Ji left */}
+      <div className="absolute top-40 left-7 z-40 flex items-center">
+        <img
+          src="/Photos/ganeshji.png"
+          alt="Ganesh Ji"
+          style={{
+            width: 300,
+            height: 300,
+            opacity: 0.7,
+            pointerEvents: "none",
+            userSelect: "none",
+          }}
+          className="block"
+        />
+      </div>
+      {/* Ganesh Ji right (mirrored) */}
+      <div className="absolute top-40 right-7 z-40 flex items-center">
+        <img
+          src="/Photos/ganeshji.png"
+          alt="Ganesh Ji"
+          style={{
+            width: 300,
+            height: 300,
+            opacity: 0.7,
+            pointerEvents: "none",
+            userSelect: "none",
+            transform: "scaleX(-1)",
+          }}
+          className="block"
+        />
+      </div>
 
-
-      {/* Professional Pink/Red Gradient Background */}
+      {/* Background and floating effects */}
       <div className="fixed inset-0 bg-gradient-to-br from-pink-500 via-rose-500 via-red-400 to-pink-600 animate-gradient-shift"></div>
-      
-      {/* Enhanced Floating Animations */}
       <FloatingHearts />
       <FloatingSparkles />
-      
-      {/* Floating Balloons */}
       <div className="fixed inset-0 pointer-events-none z-20">
         {loveQuotes.map((quote, index) => (
           <FloatingBalloon 
@@ -387,12 +385,12 @@ function App() {
 
       {/* Main Content */}
       <div className="relative z-30">
-        {/* Hero Section with Scroll Animation */}
+        {/* Hero Section */}
         <section className="min-h-screen">
           <HeroScrollDemo />
         </section>
 
-        {/* Enhanced Inspirational Quote Section */}
+        {/* Inspirational Quote Section */}
         <section className="py-20 px-4">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
@@ -406,14 +404,12 @@ function App() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Decorative elements */}
               <div className="absolute top-4 left-4">
                 <Heart className="w-8 h-8 text-pink-300 fill-current opacity-30" />
               </div>
               <div className="absolute bottom-4 right-4">
                 <Sparkles className="w-8 h-8 text-yellow-300 opacity-30" />
               </div>
-              
               <motion.h3 
                 className="text-4xl font-bold text-white mb-6 font-marathi"
                 initial={{ opacity: 0, y: 20 }}
@@ -434,7 +430,7 @@ function App() {
           </motion.div>
         </section>
 
-        {/* Enhanced Video Section */}
+        {/* Responsive Video Section */}
         <section className="py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <motion.div 
@@ -472,142 +468,50 @@ function App() {
               </motion.div>
             </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-
-<div
-  style={{
-    border: '3px solid #E75480',
-    borderRadius: 20,
-    padding: 15,
-    margin: '20px 0',
-    background: '#FFD1E3',
-    boxShadow: '0 4px 12px rgba(231, 84, 128, 0.18)',
-    maxWidth: 390,
-    textAlign: 'center'
-  }}
->
-  <h3
-    style={{
-      fontWeight: 800,
-      fontSize: '1.6em',
-      marginBottom: 18,
-      background: 'linear-gradient(90deg, #ffecd2 0%, #fcb69f 40%, #e75480 70%, #fcb69f 100%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      textShadow: '0 2px 8px #fff, 0 1px 1px #e75480'
-    }}
-  >
-    श्रीमंत पूजन
-  </h3>
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <iframe
-      src="https://drive.google.com/file/d/1MSW-qaKZFn4yqebM1gHpOT8y2JXfJPPd/preview"
-      width="370"
-      height="480"
-      allow="autoplay; fullscreen"
-      allowFullScreen
-      style={{
-        borderRadius: 15,
-        border: '2px solid #e75480',
-        boxShadow: '0 2px 10px rgba(231, 84, 128, 0.16)'
-      }}
-      title="श्रीमंत पूजन"
-    ></iframe>
-  </div>
-</div>
-
-<div
-  style={{
-    border: '3px solid #E75480',
-    borderRadius: 20,
-    padding: 15,
-    margin: '20px 0',
-    background: '#FFD1E3',
-    boxShadow: '0 4px 12px rgba(231, 84, 128, 0.18)',
-    maxWidth: 390,
-    textAlign: 'center'
-  }}
->
-  <h3
-    style={{
-      fontWeight: 800,
-      fontSize: '1.6em',
-      marginBottom: 18,
-      background: 'linear-gradient(90deg, #ffecd2 0%, #fcb69f 40%, #e75480 70%, #fcb69f 100%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      textShadow: '0 2px 8px #fff, 0 1px 1px #e75480'
-    }}
-  >
-    वरात
-  </h3>
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <iframe
-      src="https://drive.google.com/file/d/17QkLS05IX4GVMdpsWR3SPHBGRpi-ywEa/preview"
-      width="370"
-      height="480"
-      allow="autoplay; fullscreen"
-      allowFullScreen
-      style={{
-        borderRadius: 15,
-        border: '2px solid #e75480',
-        boxShadow: '0 2px 10px rgba(231, 84, 128, 0.16)'
-      }}
-      title="वरात"
-    ></iframe>
-  </div>
-</div>
-
-<div
-  style={{
-    border: '3px solid #E75480',
-    borderRadius: 20,
-    padding: 15,
-    margin: '20px 0',
-    background: '#FFD1E3',
-    boxShadow: '0 4px 12px rgba(231, 84, 128, 0.18)',
-    maxWidth: 390,
-    textAlign: 'center'
-  }}
->
-  <h3
-    style={{
-      fontWeight: 800,
-      fontSize: '1.6em',
-      marginBottom: 18,
-      background: 'linear-gradient(90deg, #ffecd2 0%, #fcb69f 40%, #e75480 70%, #fcb69f 100%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      textShadow: '0 2px 8px #fff, 0 1px 1px #e75480'
-    }}
-  >
-    लग्न
-  </h3>
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <iframe
-      src="https://drive.google.com/file/d/1h_msCOsqAzFlz89oN8na2T3-pybprLSD/preview"
-      width="370"
-      height="480"
-      allow="autoplay; fullscreen"
-      allowFullScreen
-      style={{
-        borderRadius: 15,
-        border: '2px solid #e75480',
-        boxShadow: '0 2px 10px rgba(231, 84, 128, 0.16)'
-      }}
-      title="लग्न"
-    ></iframe>
-  </div>
-</div>
-
-
-
-
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Video 1 */}
+              <div className="bg-[#FFD1E3] rounded-2xl p-4 shadow-md border-2 border-[#E75480] flex flex-col items-center">
+                <h3 className="font-bold text-lg mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-pink-300 to-pink-700" style={{textShadow:'0 2px 8px #fff, 0 1px 1px #e75480'}}>श्रीमंत पूजन</h3>
+                <div className="w-full aspect-video rounded-xl overflow-hidden border-2 border-pink-300 bg-black">
+                  <iframe
+                    src="https://drive.google.com/file/d/1MSW-qaKZFn4yqebM1gHpOT8y2JXfJPPd/preview"
+                    className="w-full h-full"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    title="श्रीमंत पूजन"
+                  ></iframe>
+                </div>
+              </div>
+              {/* Video 2 */}
+              <div className="bg-[#FFD1E3] rounded-2xl p-4 shadow-md border-2 border-[#E75480] flex flex-col items-center">
+                <h3 className="font-bold text-lg mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-pink-300 to-pink-700" style={{textShadow:'0 2px 8px #fff, 0 1px 1px #e75480'}}>वरात</h3>
+                <div className="w-full aspect-video rounded-xl overflow-hidden border-2 border-pink-300 bg-black">
+                  <iframe
+                    src="https://drive.google.com/file/d/17QkLS05IX4GVMdpsWR3SPHBGRpi-ywEa/preview"
+                    className="w-full h-full"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    title="वरात"
+                  ></iframe>
+                </div>
+              </div>
+              {/* Video 3 */}
+              <div className="bg-[#FFD1E3] rounded-2xl p-4 shadow-md border-2 border-[#E75480] flex flex-col items-center">
+                <h3 className="font-bold text-lg mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-pink-300 to-pink-700" style={{textShadow:'0 2px 8px #fff, 0 1px 1px #e75480'}}>लग्न</h3>
+                <div className="w-full aspect-video rounded-xl overflow-hidden border-2 border-pink-300 bg-black">
+                  <iframe
+                    src="https://drive.google.com/file/d/1h_msCOsqAzFlz89oN8na2T3-pybprLSD/preview"
+                    className="w-full h-full"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    title="लग्न"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         
-
         {/* Another Enhanced Quote Section */}
         <section className="py-16 px-4">
           <motion.div 
@@ -649,7 +553,6 @@ function App() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
             >
-              {/* Enhanced decorative elements */}
               <motion.div 
                 className="absolute top-6 left-6"
                 animate={{ rotate: 360 }}
@@ -665,21 +568,19 @@ function App() {
                 <Sparkles className="w-10 h-10 text-yellow-300 opacity-20" />
               </motion.div>
               
-              {/* Photo placeholder for couple's current photo */}
-<motion.div 
-  className="mb-8 flex justify-center"
-  initial={{ opacity: 0, scale: 0.8 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ delay: 0.3 }}
->
-  <img
-    src="/Photos/still_strong.jpg"
-
-    alt="Still Going Strong"
-    className="rounded-3xl border-4 border-pink-200 shadow-xl max-w-xs"
-    style={{ maxHeight: 320, objectFit: 'cover' }}
-  />
-</motion.div>
+              <motion.div 
+                className="mb-8 flex justify-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                <img
+                  src="/Photos/still_strong.jpg"
+                  alt="Still Going Strong"
+                  className="rounded-3xl border-4 border-pink-200 shadow-xl w-full max-w-xs md:max-w-sm"
+                  style={{ maxHeight: 320, objectFit: 'cover' }}
+                />
+              </motion.div>
 
               <motion.h3 
                 className="text-5xl font-bold text-white mb-4 font-elegant"
@@ -687,7 +588,7 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-             Love not fading away
+                Love not fading away
               </motion.h3>
               
               <motion.p 
@@ -696,7 +597,7 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
               >
-              वय वाढलंय, पण प्रेम अजून तेच जुनं आणि खास आहे
+                वय वाढलंय, पण प्रेम अजून तेच जुनं आणि खास आहे
               </motion.p>
               
               <motion.p 
@@ -705,7 +606,7 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
               >
-              We've aged, but our love is still the same—old and special.
+                We've aged, but our love is still the same—old and special.
               </motion.p> 
 
               <motion.div 
@@ -759,7 +660,7 @@ function App() {
                 whileInView={{ opacity: 1, rotateY: 0 }}
                 transition={{ delay: 0.2 }}
               >
-              पूर्वी तिला गुलाब द्यायचो, आता pain balm देतो… प्रेमाचं evolution बघा!
+                पूर्वी तिला गुलाब द्यायचो, आता pain balm देतो… प्रेमाचं evolution बघा!
               </motion.h3>
               <motion.p 
                 className="text-xl text-pink-100 italic font-body"
@@ -767,7 +668,7 @@ function App() {
                 whileInView={{ opacity: 1, rotateY: 0 }}
                 transition={{ delay: 0.4 }}
               >
-              I used to give her roses, now I hand her pain balm… witness the evolution of love!
+                I used to give her roses, now I hand her pain balm… witness the evolution of love!
               </motion.p>
             </div>
           </motion.div>

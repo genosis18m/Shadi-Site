@@ -89,17 +89,13 @@ export function HeroScrollDemo() {
               <Sparkles className="w-6 h-6 text-yellow-400 opacity-60" />
             </div>
             
-            {/* Photo Gallery */}
+            {/* Responsive Photo Gallery */}
             <div className="w-full p-4">
-              <h3 className="text-3xl font-bold text-pink-800 font-elegant mb-6 text-center">
-                Wedding Memories
-              </h3>
-              
-              <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 max-h-[30rem] overflow-y-auto p-2">
+              <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 w-full px-2">
                 {heroPhotos.map((src, idx) => (
                   <motion.div
                     key={src}
-                    className="cursor-pointer"
+                    className="cursor-pointer aspect-square"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setLightboxSrc(src)}
@@ -111,8 +107,7 @@ export function HeroScrollDemo() {
                     <img 
                       src={src}
                       alt={`Wedding memory ${idx + 1}`}
-                      className="rounded-lg shadow-md w-full h-auto"
-                      style={{ maxHeight: "150px" }}
+                      className="rounded-lg shadow-md w-full h-full object-cover"
                     />
                   </motion.div>
                 ))}
