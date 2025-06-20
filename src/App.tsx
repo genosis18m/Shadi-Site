@@ -345,7 +345,7 @@ function App() {
           style={{
             width: 150,
             height: 150,
-            opacity: 0.5,
+            opacity: 0.3,
             pointerEvents: "none",
             userSelect: "none",
           }}
@@ -360,7 +360,7 @@ function App() {
           style={{
             width: 150,
             height: 150,
-            opacity: 0.5,
+            opacity: 0.3,
             pointerEvents: "none",
             userSelect: "none",
             transform: "scaleX(-1)",
@@ -471,7 +471,14 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {/* Video 1 */}
               <div className="bg-[#FFD1E3] rounded-2xl p-4 shadow-md border-2 border-[#E75480] flex flex-col items-center">
-                <h3 className="font-bold text-lg mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-pink-300 to-pink-700" style={{textShadow:'0 2px 8px #fff, 0 1px 1px #e75480'}}>श्रीमंत पूजन</h3>
+                <h3
+  className="font-extrabold text-2xl md:text-3xl mb-2 text-pink-800 font-serif tracking-wide"
+  style={{
+    textShadow: "0 1px 4px #fff, 0 2px 8px #e75480"
+  }}
+>
+श्रीमंत पूजन
+</h3>
                 <div className="w-full aspect-video rounded-xl overflow-hidden border-2 border-pink-300 bg-black">
                   <iframe
                     src="https://drive.google.com/file/d/1MSW-qaKZFn4yqebM1gHpOT8y2JXfJPPd/preview"
@@ -484,7 +491,14 @@ function App() {
               </div>
               {/* Video 2 */}
               <div className="bg-[#FFD1E3] rounded-2xl p-4 shadow-md border-2 border-[#E75480] flex flex-col items-center">
-                <h3 className="font-bold text-lg mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-pink-300 to-pink-700" style={{textShadow:'0 2px 8px #fff, 0 1px 1px #e75480'}}>वरात</h3>
+                                <h3
+  className="font-extrabold text-2xl md:text-3xl mb-2 text-pink-800 font-serif tracking-wide"
+  style={{
+    textShadow: "0 1px 4px #fff, 0 2px 8px #e75480"
+  }}
+>
+वरात
+</h3>
                 <div className="w-full aspect-video rounded-xl overflow-hidden border-2 border-pink-300 bg-black">
                   <iframe
                     src="https://drive.google.com/file/d/17QkLS05IX4GVMdpsWR3SPHBGRpi-ywEa/preview"
@@ -497,7 +511,15 @@ function App() {
               </div>
               {/* Video 3 */}
               <div className="bg-[#FFD1E3] rounded-2xl p-4 shadow-md border-2 border-[#E75480] flex flex-col items-center">
-                <h3 className="font-bold text-lg mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-pink-300 to-pink-700" style={{textShadow:'0 2px 8px #fff, 0 1px 1px #e75480'}}>लग्न</h3>
+                <h3
+  className="font-extrabold text-2xl md:text-3xl mb-2 text-pink-800 font-serif tracking-wide"
+  style={{
+    textShadow: "0 1px 4px #fff, 0 2px 8px #e75480"
+  }}
+>
+  लग्न
+</h3>
+
                 <div className="w-full aspect-video rounded-xl overflow-hidden border-2 border-pink-300 bg-black">
                   <iframe
                     src="https://drive.google.com/file/d/1h_msCOsqAzFlz89oN8na2T3-pybprLSD/preview"
