@@ -673,7 +673,7 @@ function App() {
   transition={{ delay: 0.3 }}
 >
   <img
-    src="/still_strong.jpg"
+    src="/Photos/still_strong.jpg"
 
     alt="Still Going Strong"
     className="rounded-3xl border-4 border-pink-200 shadow-xl max-w-xs"
